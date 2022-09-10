@@ -45,7 +45,7 @@
     * [Static block initialization](src/main/java/com/ysingh/creational/singleton/staticinitialization/Singleton.java)
     * [Lazy initilization](src/main/java/com/ysingh/creational/singleton/lazyinitialization/Singleton.java)
     * [Thread Safe Singleton](src/main/java/com/ysingh/creational/singleton/threadsafe/Singleton.java)
-    * [Bill Pugh Singleton Implementation]
+    * [Bill Pugh Singleton Implementation](src/main/java/com/ysingh/creational/singleton/billpugh/Singleton.java)
     * [Enum Singleton]
     * [Using Reflection to destroy singleton]
     * [Using clone to destroy/prevent singleton]
