@@ -41,10 +41,10 @@
     * Create private static variable of the same class that is the only instance of the class.
     * Create public static method that returns the instance of the class and this is global access point for others to get the instance of the singleton class.
 * Make sure that singleton class must provide a global access point to get the instance.
-    * [Eager initilization]
-    * [Static block initialization]
-    * [Lazy initilization]
-    * [Thread Safe Singleton]
+    * [Eager initilization](src/main/java/com/ysingh/creational/singleton/eagerinitialization/Singleton.java)
+    * [Static block initialization](src/main/java/com/ysingh/creational/singleton/staticinitialization/Singleton.java)
+    * [Lazy initilization](src/main/java/com/ysingh/creational/singleton/lazyinitialization/Singleton.java)
+    * [Thread Safe Singleton](src/main/java/com/ysingh/creational/singleton/threadsafe/Singleton.java)
     * [Bill Pugh Singleton Implementation]
     * [Enum Singleton]
     * [Using Reflection to destroy singleton]
