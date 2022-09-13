@@ -9,7 +9,7 @@
 ## Types of Design Pattern
 * **Creational Design Pattern:** This provides different approach or ways to create the object in best possible and loose coupled manner.
     * [Singleton Pattern](src/main/java/com/ysingh/creational/singleton)
-    * Factory Pattern
+    * [Factory Pattern](src/main/java/com/ysingh/creational/factory)
     * Abstract Factory Pattern
     * Builder Pattern
     * Prototype Pattern
@@ -59,6 +59,11 @@
         * Logging
         * Caching
         * Thread Pools
+
+## Factory Design Pattern
+* This pattern is used when we have a super class with multiple sub-classes and based on input we need to return object of one of the sub-class.
+* This takes out the responsibility of the instantiation of the class object from the client program to factory class.
+* [Example](src/main/java/com/ysingh/creational/factory/TestApp.java)
 
 
 
