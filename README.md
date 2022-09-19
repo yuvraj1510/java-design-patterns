@@ -14,7 +14,7 @@
     * [Builder Pattern](src/main/java/com/ysingh/creational/builder)
     * [Prototype Pattern](src/main/java/com/ysingh/creational/prototype)
 * **Structural Design Pattern:** This explains about the ways how objects and classes can be combined to build a large application structure.
-    * Adapter Pattern
+    * [Adapter Pattern](src/main/java/com/ysingh/structural/adapter)
     * Bridge Pattern
     * Decorator Pattern
     * Facade Pattern
@@ -113,6 +113,19 @@
 * [Example](src/main/java/com/ysingh/creational/prototype/TestApp.java)
 ### Examples within JDK:
 * clone() method in java.lang.Object (The class has to implement the java.lang.Cloneable interface)
+
+## Adapter Design Pattern
+* Adapter design pattern is one of the structural design pattern.
+* It is used to that two unrelated interfaces can work together.
+* The object that joins these unrelated interface is called an Adapter.
+### Implementation:
+* [Example](src/main/java/com/ysingh/structural/adapter/TestApp.java)
+### Examples within JDK:
+* asList() method in java.util.Arrays
+* java.io.InputStreamReader(InputStream)
+* java.io.OutputStreamWriter(OutputStream)
+* javax.xml.bind.annotation.adapters.XmlAdapter- #marshal() and #unmarshal()
+
 
 
 
