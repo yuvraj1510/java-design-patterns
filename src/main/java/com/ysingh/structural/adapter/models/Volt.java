@@ -1,4 +1,4 @@
-package com.ysingh.structural.adapter;
+package com.ysingh.structural.adapter.models;
 
 public class Volt {
 	

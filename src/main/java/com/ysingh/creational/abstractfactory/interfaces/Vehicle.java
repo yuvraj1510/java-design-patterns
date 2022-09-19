@@ -1,4 +1,4 @@
-package com.ysingh.creational.abstractfactory;
+package com.ysingh.creational.abstractfactory.interfaces;
 
 public interface Vehicle {
 	

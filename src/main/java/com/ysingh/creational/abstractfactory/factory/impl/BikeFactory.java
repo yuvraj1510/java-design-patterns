@@ -1,4 +1,8 @@
-package com.ysingh.creational.abstractfactory;
+package com.ysingh.creational.abstractfactory.factory.impl;
+
+import com.ysingh.creational.abstractfactory.factory.AbstractVehicleFactory;
+import com.ysingh.creational.abstractfactory.interfaces.Vehicle;
+import com.ysingh.creational.abstractfactory.interfaces.impl.Bike;
 
 public class BikeFactory implements AbstractVehicleFactory {
 

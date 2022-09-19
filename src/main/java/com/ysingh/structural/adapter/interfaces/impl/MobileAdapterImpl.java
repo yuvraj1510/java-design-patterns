@@ -1,4 +1,8 @@
-package com.ysingh.structural.adapter;
+package com.ysingh.structural.adapter.interfaces.impl;
+
+import com.ysingh.structural.adapter.interfaces.MobileAdapter;
+import com.ysingh.structural.adapter.interfaces.WallSocket;
+import com.ysingh.structural.adapter.models.Volt;
 
 public class MobileAdapterImpl implements MobileAdapter {
 

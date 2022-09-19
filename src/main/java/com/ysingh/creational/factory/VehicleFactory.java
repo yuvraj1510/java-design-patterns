@@ -1,5 +1,10 @@
 package com.ysingh.creational.factory;
 
+import com.ysingh.creational.factory.interfaces.Vehicle;
+import com.ysingh.creational.factory.interfaces.impl.Bike;
+import com.ysingh.creational.factory.interfaces.impl.Car;
+import com.ysingh.creational.factory.interfaces.impl.Truck;
+
 public class VehicleFactory {
 
 	private VehicleFactory() {

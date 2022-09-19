@@ -1,6 +1,8 @@
-package com.ysingh.creational.factory;
+package com.ysingh.creational.factory.interfaces.impl;
 
-public class Truck implements Vehicle {
+import com.ysingh.creational.factory.interfaces.Vehicle;
+
+public class Bike implements Vehicle {
 
 	private String color;
 	private String company;
@@ -8,7 +10,7 @@ public class Truck implements Vehicle {
 	private boolean isElectric;
 	private boolean isAutomatic;
 	
-	public Truck(String color, String company, String type, boolean isElectric, boolean isAutomatic) {
+	public Bike(String color, String company, String type, boolean isElectric, boolean isAutomatic) {
 		super();
 		this.color = color;
 		this.company = company;
@@ -39,8 +41,7 @@ public class Truck implements Vehicle {
 
 	@Override
 	public String toString() {
-		return "Truck [color=" + color + ", company=" + company + ", type=" + type + ", isElectric=" + isElectric
+		return "Bike [color=" + color + ", company=" + company + ", type=" + type + ", isElectric=" + isElectric
 				+ ", isAutomatic=" + isAutomatic + "]";
-	}
-
+	}	
 }

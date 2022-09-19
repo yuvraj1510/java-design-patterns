@@ -1,5 +1,7 @@
 
-package com.ysingh.creational.abstractfactory;
+package com.ysingh.creational.abstractfactory.factory;
+
+import com.ysingh.creational.abstractfactory.interfaces.Vehicle;
 
 public class VehicleFactory {
 

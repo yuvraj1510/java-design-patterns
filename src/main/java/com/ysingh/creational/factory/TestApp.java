@@ -1,5 +1,7 @@
 package com.ysingh.creational.factory;
 
+import com.ysingh.creational.factory.interfaces.Vehicle;
+
 public class TestApp {
 
 	public static void main(String[] args) {

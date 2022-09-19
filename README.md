@@ -18,7 +18,7 @@
     * Bridge Pattern
     * Decorator Pattern
     * Facade Pattern
-    * Composite Pattern
+    * [Composite Pattern](src/main/java/com/ysingh/structural/composite)
     * Proxy Pattern
     * Flyweight Pattern
 * **Behavioral Design Pattern:** This provides solution for the better interaction between objects and how to provide loose coupling and flexibility to extend easily. This is mainly about communication between the classes in loose coupled manner.
@@ -126,7 +126,20 @@
 * java.io.OutputStreamWriter(OutputStream)
 * javax.xml.bind.annotation.adapters.XmlAdapter- #marshal() and #unmarshal()
 
-
+## Composite Design Pattern
+* Composite design pattern is one of the structural design pattern.
+* It is used when we have to represent a part-out of whole hierarchy.
+* When we want to create a structure in a way that the objects in the structure has to be treated the same way then we can apply composite design pattern.
+* We can break down the pattern into:
+    * **Component** - is the base interface for all the objects in the composition. It should be either an interface or an abstract class with the common methods to manage the child composites.
+    * **Leaf** - implements the default behavior of the base component. It doesn't contain a reference to the other objects.
+    * **Composite** - It has leaf elements. It implements the base component methods and defines the child-related operations.
+    * **Client** - It has access to the composition elements by using the base component object.
+### Implementation:
+* [Example](src/main/java/com/ysingh/structural/composite/TestApp.java)
+### Examples within JDK:
+* add(Component) method in java.awt.Container
+* getChildren() method in javax.faces.component.UIComponent
 
 
 

@@ -1,4 +1,6 @@
-package com.ysingh.creational.factory;
+package com.ysingh.creational.factory.interfaces.impl;
+
+import com.ysingh.creational.factory.interfaces.Vehicle;
 
 public class Car implements Vehicle {
 
