@@ -16,12 +16,22 @@
 
 * **Structural Design Pattern:** This explains about the ways how objects and classes can be combined to build a large application structure.
     * [Adapter Pattern](src/main/java/com/ysingh/structural/adapter)
-    * Bridge Pattern
-    * Decorator Pattern
+    * [Bridge Pattern](src/main/java/com/ysingh/structural/bridge)
+    * [Decorator Pattern](src/main/java/com/ysingh/structural/decorator)
     * [Facade Pattern](src/main/java/com/ysingh/structural/facade)
     * [Composite Pattern](src/main/java/com/ysingh/structural/composite)
     * [Proxy Pattern](src/main/java/com/ysingh/structural/proxy)
     * Flyweight Pattern
+
+Name|Used Notion(Inheritance or Composition)|Example Used
+----|---------------------------------------|------------
+Adapter | Inheritance for Adapter implementations and composition for joining those implementations | Mobile Adapter - convert 240 Volts to 3 Volts
+Bridge | Abstract class in composition with Interface and implementation of Abstract class and Interfaces | Draw Shape and Fill Color - Shape is Abstract class and Color is interface
+Decorator | Inhertance for Base implementation and then composition of enhanced implementation using Base implementation | Bike - Basic Bike, and Luxury and Sport Bike created using Decorator
+Facade | Composition of different interfaces and give simple facade to call the methods of composed interfaces | Report - PdfReport, HtmlReport, ExcelReport
+Composite | Uses inheritance with different implementation and then single implementation of same interface combined different implementation | Service - Employee and Admin Service based on ServiceType
+Proxy | Inheritance for main implementation and then composition for main implementation in Proxy implementation | Very expensive process implementation and Very expensive process proxy
+
 
 * **Behavioral Design Pattern:** This provides solution for the better interaction between objects and how to provide loose coupling and flexibility to extend easily. This is mainly about communication between the classes in loose coupled manner.
     * Chain of Responsibility Pattern
@@ -168,5 +178,24 @@
 * javax.faces.context.FacesContext
 * javax.faces.context.ExternalContext
 
+## Decorator Design Pattern
+* Decorator design pattern is one of the structural design pattern.
+* Decorator design pattern is used to modify the functionality of an object at runtime. At the same time other instances of the same class will not be affected by this. so individual object gets the modified behavior.
+* This Pattern provides a wrapper to the existing class.
+* Decorator design pattern uses abstracts or interfaces with the composition to implement the wrapper.
+* Decorator design pattern is helpful in providing runtime modification abilities and hence more flexible. Its easy to maintain and extend when the number of choices are more.
+### Implementation:
+* [Example](src/main/java/com/ysingh/structural/decorator/TestApp.java)
+### Examples within JDK:
+* Used a lot in Java IO packages, such as FileReader, BufferedReader, BufferedInputStream etc.
+* java.utils.Collections (synchronizedTTT() and unmodifiableTTT() methods)
+* javax.servlet.http.HttpServletRequestWrapper and HttpServletResponseWrapper.
 
-
+## Bridge Design Pattern
+* Bridge design pattern is one of the structural design pattern.
+* When we have interface hierarchies in both interfaces as well as implementation then bridge design pattern is used to decouple the interfaces from implementation and hiding the implementation details from the client.
+* This decouple abstraction from its implementation so that he two can vary independently.
+* The implementation of bridge design pattern follows the notion to refer Composition over inheritance.
+* Bridge Design Pattern can be used when both abstraction and implementation can have different hierarchies independently and we want to hide the implementation from the client application.
+### Implementation:
+* [Example](src/main/java/com/ysingh/structural/bridge/TestApp.java)
