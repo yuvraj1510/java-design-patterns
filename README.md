@@ -13,14 +13,16 @@
     * [Abstract Factory Pattern](src/main/java/com/ysingh/creational/abstractfactory)
     * [Builder Pattern](src/main/java/com/ysingh/creational/builder)
     * [Prototype Pattern](src/main/java/com/ysingh/creational/prototype)
+
 * **Structural Design Pattern:** This explains about the ways how objects and classes can be combined to build a large application structure.
     * [Adapter Pattern](src/main/java/com/ysingh/structural/adapter)
     * Bridge Pattern
     * Decorator Pattern
-    * Facade Pattern
+    * [Facade Pattern](src/main/java/com/ysingh/structural/facade)
     * [Composite Pattern](src/main/java/com/ysingh/structural/composite)
-    * Proxy Pattern
+    * [Proxy Pattern](src/main/java/com/ysingh/structural/proxy)
     * Flyweight Pattern
+
 * **Behavioral Design Pattern:** This provides solution for the better interaction between objects and how to provide loose coupling and flexibility to extend easily. This is mainly about communication between the classes in loose coupled manner.
     * Chain of Responsibility Pattern
     * Template Method Pattern
@@ -92,7 +94,6 @@
 * newInstance() method in javax.xml.transform.TransformerFactory class
 * newInstance() method in javax.xml.xpath.XPathFactory class
 
-
 ## Builder Design Pattern
 * This pattern is used to create the object systematically when object contains lot of attributes.
 * **Problem with Factory/Abstract Factory Design Pattern**:
@@ -141,8 +142,31 @@
 * add(Component) method in java.awt.Container
 * getChildren() method in javax.faces.component.UIComponent
 
+## Proxy Design Pattern
+* The Proxy pattern allows us to create an intermediary that acts as an interface to an another resource and also hiding the underlying complexity of the component.
+* Proxy means "in place of" representing or "on behalf of" are literal meanings of proxy and that directly explains Proxy Design Patterns.
+* Consider heavy java objects (like a JDBC connection or a SessionFactory) that require some initial configuration. We only want such objects to be initialized on demand, and once they are, we'd want to reuse them for all calls.
+* We should use this when we want a simplified version of a complex or heavy object.
+### Implementation:
+* [Example](src/main/java/com/ysingh/structural/proxy/TestApp.java)
+### Examples within JDK:
+* java.lang.reflect.Proxy
+* java.rmi.*
+* javax.ejb.EJB
+* javax.persistence.PersistenceContext
 
-
+## Facade Design Pattern
+* Facade design pattern is one of the structural design pattern.
+* Facade design pattern is used to help client applications to easily interact with the system.
+* This pattern provides a unified interface to a set of interfaces in a subsystem or system. Facade pattern defines a higher-level interface that makes the subsystem easier to use.
+* Facade Design Pattern doesn't hide the sub system interfaces from client. Whether to use Facade or not is completely dependent on client code.
+* Facade design pattern can be applied at any point of development, usually when the number of interfaces grow and system gets complex.
+* Facade pattern should be applied to similar kind of interfaces.
+### Implementation:
+* [Example](src/main/java/com/ysingh/structural/facade/TestApp.java)
+### Examples within JDK:
+* javax.faces.context.FacesContext
+* javax.faces.context.ExternalContext
 
 
 
