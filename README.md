@@ -35,7 +35,7 @@ Proxy | Inheritance for main implementation and then composition for main implem
 
 * **Behavioral Design Pattern:** This provides solution for the better interaction between objects and how to provide loose coupling and flexibility to extend easily. This is mainly about communication between the classes in loose coupled manner.
     * Chain of Responsibility Pattern
-    * Template Method Pattern
+    * [Template Method Pattern](src/main/java/com/ysingh/behavioral/template)
     * Observer Pattern
     * Strategy Pattern
     * Mediator Pattern
@@ -107,7 +107,7 @@ Proxy | Inheritance for main implementation and then composition for main implem
 ## Builder Design Pattern
 * This pattern is used to create the object systematically when object contains lot of attributes.
 * **Problem with Factory/Abstract Factory Design Pattern**:
-    * When we have to pass lot of attributes from cliennt program to factory class that can be error prone because most of the times type of parameter is same and from client side it is hard to maintain the order of the parameters.
+    * When we have to pass lot of attributes from client program to factory class that can be error prone because most of the times type of parameter is same and from client side it is hard to maintain the order of the parameters.
     * Few parameters might be optional but we in factory design pattern it is mandatory send all the parameters and optional parameters are either to be passed as null or with their default value.
     * If the object is complex and big then all the complexity will be part of factory class.
 ### Implementation:
@@ -199,3 +199,20 @@ Proxy | Inheritance for main implementation and then composition for main implem
 * Bridge Design Pattern can be used when both abstraction and implementation can have different hierarchies independently and we want to hide the implementation from the client application.
 ### Implementation:
 * [Example](src/main/java/com/ysingh/structural/bridge/TestApp.java)
+
+## Template Design Pattern
+* Template design pattern is one of the behavioral design pattern.
+* It used to create a method stub and that differs some of the steps of implementation to the subclasses.
+* Template method defines the steps to execute an algorithm and it can provide default implementation that might be common for all or some of the classes.
+* Template method should consists of certain steps whose order is fixed and for some of the methods, implementation differs from base class to sub class. If we want some of method should not be overriden by sub classes then we need those template methods as final.
+* **Use Case** - Making of a Pizza
+    * selecting bread
+    * adding ingredients
+    * cooking
+    * adding toopings
+    * adding cheese
+### Implementation:
+* [Example](src/main/java/com/ysingh/behavioral/template/TestApp.java)
+### Examples within JDK:
+* All non-abstract methods of java.io.InputStream, java.io.OutputStream, java.io.Reader and java.io.Writer.
+* All non-abstract methods of java.util.AbstractList, java.util.AbstractSet and java.util.AbstractMap.
