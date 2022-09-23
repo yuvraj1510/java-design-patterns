@@ -38,7 +38,7 @@ Proxy | Inheritance for main implementation and then composition for main implem
     * [Template Method Pattern](src/main/java/com/ysingh/behavioral/template)
     * Observer Pattern
     * Strategy Pattern
-    * Mediator Pattern
+    * [Mediator Pattern](src/main/java/com/ysingh/behavioral/mediator)
     * Command Pattern
     * State Pattern
     * Visitor Pattern
@@ -216,3 +216,16 @@ Proxy | Inheritance for main implementation and then composition for main implem
 ### Examples within JDK:
 * All non-abstract methods of java.io.InputStream, java.io.OutputStream, java.io.Reader and java.io.Writer.
 * All non-abstract methods of java.util.AbstractList, java.util.AbstractSet and java.util.AbstractMap.
+* In Spring framework we have several classes which uses Method Template design pattern - JdbcTemplate, HibernateTemplate, JmsTemplate, RestTemplate, SimpleJdbcTemplate,TransactionTemplate.
+
+## Mediator Design Pattern
+* Mediator design pattern is one of the behavioral design pattern.
+* It deals with the behaviors of objects. It is used to provide a centrazied communication medium between different objects in a system.
+* The system objects that communicate each other are called Collegues. Usually we have an interface or abstract class that provides the contract for communication and then we have concrete implementation of mediators.
+* Mediator pattern is useful when the communication logic between objects is complex, we have a central point of communication that takes care of communication logic.
+### Implementation:
+* [Example](src/main/java/com/ysingh/behavioral/mediator/TestApp.java)
+### Examples within JDK:
+* scheduleTTT() methods in java.util.Time class
+* execute() method in Java Concurrency Executor.
+* invoke() method in java.lang.reflect.Method.
