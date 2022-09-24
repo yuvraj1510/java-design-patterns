@@ -36,7 +36,7 @@ Proxy | Inheritance for main implementation and then composition for main implem
 * **Behavioral Design Pattern:** This provides solution for the better interaction between objects and how to provide loose coupling and flexibility to extend easily. This is mainly about communication between the classes in loose coupled manner.
     * [Chain of Responsibility Pattern](src/main/java/com/ysingh/behavioral/cor)
     * [Template Method Pattern](src/main/java/com/ysingh/behavioral/template)
-    * Observer Pattern
+    * [Observer Pattern](src/main/java/com/ysingh/behavioral/observer)
     * [Strategy Pattern](src/main/java/com/ysingh/behavioral/strategy)
     * [Mediator Pattern](src/main/java/com/ysingh/behavioral/mediator)
     * Command Pattern
@@ -275,3 +275,16 @@ Proxy | Inheritance for main implementation and then composition for main implem
 * javax.lang.model.element.Element and ElementVisitor
 * javax.lang.model.type.TypeMirror and TypeVisitor
 * java.nio.file.FileVisitor and SimpleFileVisitor
+
+## Observer Design Pattern
+* Observer design pattern is one of the behavioral design pattern.
+* This is useful when we are interested in the state of an object and want to get notified whenever there is any change.
+* The object that watch on the state of another object are called Observer and the object that is being watched is called Subject.
+* In this Pattern, we define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+* Subject contains a list of observers to notify of any change in it's state, so it should provide method using which observers can register and unregister themselves. Subject also contain a method to notify all the observers of any change and either it can send the update while notifying the observer or it can provide another method to get the update.
+### Implementation:
+* [Example](src/main/java/com/ysingh/behavioral/observer/TestApp.java)
+### Examples within JDK:
+* java.util.Observer & java.util.Observable
+* javax.servlet.http.HttpSessionBindingListerner
+* javax.servlet.http.HttpSessionAttibuteListerner
