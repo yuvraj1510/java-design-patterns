@@ -40,7 +40,7 @@ Proxy | Inheritance for main implementation and then composition for main implem
     * [Strategy Pattern](src/main/java/com/ysingh/behavioral/strategy)
     * [Mediator Pattern](src/main/java/com/ysingh/behavioral/mediator)
     * Command Pattern
-    * State Pattern
+    * [State Pattern](src/main/java/com/ysingh/behavioral/state)
     * Visitor Pattern
     * Interpretor Pattern
     * Iterator Pattern
@@ -255,3 +255,10 @@ Proxy | Inheritance for main implementation and then composition for main implem
 ### Examples within JDK:
 * sort() method in Collections.
 * service() method in javax.servlet.http.HttpServlet plus all of the doTTT() methods that access HttpServletRequest and HttpServletResponse objects as arguments.
+
+## State Design Pattern
+* State design pattern is one of the behavioral design pattern.
+* It is used when an Object change its behavior based on its internal state.
+* The benefit of using State pattern to implement polymorphic behavior. The chances of error are less and it's very easy to add more states for additional behavior. Thus making our code more robust, easily maintainable and flexible.
+### Implementation:
+* [Example](src/main/java/com/ysingh/behavioral/state/TestApp.java)
