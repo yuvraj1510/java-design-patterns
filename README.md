@@ -41,7 +41,7 @@ Proxy | Inheritance for main implementation and then composition for main implem
     * [Mediator Pattern](src/main/java/com/ysingh/behavioral/mediator)
     * Command Pattern
     * [State Pattern](src/main/java/com/ysingh/behavioral/state)
-    * Visitor Pattern
+    * [Visitor Pattern](src/main/java/com/ysingh/behavioral/visitor)
     * Interpretor Pattern
     * Iterator Pattern
     * Memento Pattern
@@ -262,3 +262,16 @@ Proxy | Inheritance for main implementation and then composition for main implem
 * The benefit of using State pattern to implement polymorphic behavior. The chances of error are less and it's very easy to add more states for additional behavior. Thus making our code more robust, easily maintainable and flexible.
 ### Implementation:
 * [Example](src/main/java/com/ysingh/behavioral/state/TestApp.java)
+
+## Visitor Design Pattern
+* Visitor design pattern is one of the behavioral design pattern.
+* It is used when we have to perform an operation on a group of similar kind of Objects. With the help of visitor pattern, we can move the operational logic from the objects to another class.
+* The benefit of this pattern is that if the logic of operation changes, then we need to make change only in the visitor implementation rather than doing it in all the class.
+* Another benefit is that adding a new class to the system is easy, it will require change only in visitor interface and implementation and existing classes will not be affected.
+### Implementation:
+* [Example](src/main/java/com/ysingh/behavioral/visitor/TestApp.java)
+### Examples within JDK:
+* javax.lang.model.element.AnnotationValue and AnnotationValueVisitor
+* javax.lang.model.element.Element and ElementVisitor
+* javax.lang.model.type.TypeMirror and TypeVisitor
+* java.nio.file.FileVisitor and SimpleFileVisitor
