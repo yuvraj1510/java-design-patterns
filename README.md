@@ -34,7 +34,7 @@ Proxy | Inheritance for main implementation and then composition for main implem
 
 
 * **Behavioral Design Pattern:** This provides solution for the better interaction between objects and how to provide loose coupling and flexibility to extend easily. This is mainly about communication between the classes in loose coupled manner.
-    * Chain of Responsibility Pattern
+    * [Chain of Responsibility Pattern](src/main/java/com/ysingh/behavioral/cor)
     * [Template Method Pattern](src/main/java/com/ysingh/behavioral/template)
     * Observer Pattern
     * Strategy Pattern
@@ -229,3 +229,18 @@ Proxy | Inheritance for main implementation and then composition for main implem
 * scheduleTTT() methods in java.util.Time class
 * execute() method in Java Concurrency Executor.
 * invoke() method in java.lang.reflect.Method.
+
+## Chain of Responsibility (COR) Design Pattern
+* COR design pattern is one of the behavioral design pattern.
+* COR is used to achieve loose couping in software design where a request from client is passed to a chain of objects to process them. Then the object in chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
+### Important Points
+* Client doesn't know which part of the chain will be processing the request and it will send the request to the first object in the chain.
+* Each object in the chain will have it's own implementation to process the request, either full or partial or to send it to the next object in the chain.
+* Every object in the chain should have reference to the next object in chain to forward the request to, it is achieved by java composition.
+* Creating the chain carefully is very important otherwise there might be a case that the request will never be forwarded to a particular processor or there are no objects in the chain who are able to handle the request.
+### Implementation:
+* [Example](src/main/java/com/ysingh/behavioral/cor/TestApp.java)
+### Examples within JDK:
+* Exception handling chain based on exception thrown.
+* log() method in java.util.logging.Logger.
+* doFilter() method in javax.servlet.Filter.
