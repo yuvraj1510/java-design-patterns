@@ -42,7 +42,7 @@ Proxy | Inheritance for main implementation and then composition for main implem
     * Command Pattern
     * [State Pattern](src/main/java/com/ysingh/behavioral/state)
     * [Visitor Pattern](src/main/java/com/ysingh/behavioral/visitor)
-    * Interpretor Pattern
+    * [Interpretor Pattern](src/main/java/com/ysingh/behavioral/interpreter)
     * [Iterator Pattern](src/main/java/com/ysingh/behavioral/iterator)
     * Memento Pattern
 
@@ -299,3 +299,15 @@ Proxy | Inheritance for main implementation and then composition for main implem
 ### Implementation:
 * [Example](src/main/java/com/ysingh/behavioral/iterator/TestApp.java)
 ### Examples within JDK:
+* All implementations of java.util.Iterator
+* All implementations of java.util.Enumeration
+
+## Interpreter Design Pattern
+* Interpreter design pattern is one of the structural design pattern.
+* It is used to defines a grammatical representation for a language and provides an interpreter to deal with this grammer.
+* The best example of interpreter design patten is java compiler that interprets the java source code into by code that is understandable by JVM.
+* Google translator is also an example of interpreter pattern where the input can be in any language and we can get the output interpreted in another language.
+### Implementation:
+* [Example](src/main/java/com/ysingh/behavioral/interpreter/TestApp.java)
+### Examples within JDK:
+* java.util.regex.Pattern and subclasses of java.text.Format are some of the examples of interpreter pattern used in JDK.
