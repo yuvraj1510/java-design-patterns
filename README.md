@@ -43,7 +43,7 @@ Proxy | Inheritance for main implementation and then composition for main implem
     * [State Pattern](src/main/java/com/ysingh/behavioral/state)
     * [Visitor Pattern](src/main/java/com/ysingh/behavioral/visitor)
     * Interpretor Pattern
-    * Iterator Pattern
+    * [Iterator Pattern](src/main/java/com/ysingh/behavioral/iterator)
     * Memento Pattern
 
 ## Singleton Design Pattern
@@ -288,3 +288,14 @@ Proxy | Inheritance for main implementation and then composition for main implem
 * java.util.Observer & java.util.Observable
 * javax.servlet.http.HttpSessionBindingListerner
 * javax.servlet.http.HttpSessionAttibuteListerner
+
+## Iterator Design Pattern
+* Iterator design pattern is one of the structural design pattern.
+* Iterator pattern is used to provide a strandard way to traverse through a group of Objects. Iterator pattern is widely used in Java Collection.
+* Iterator interface provide methods of traversing through a collection.
+* This pattern provides a way to access the elements of an aggregate object without exposing its underlying representation.
+* Iterator pattern is not only about traversing through a collection, we can provide different kind of iterators based on our requirements.
+* Iterator design pattern hides the actual implementation of traversal through the collection and client programs just use the iterator methods.
+### Implementation:
+* [Example](src/main/java/com/ysingh/behavioral/iterator/TestApp.java)
+### Examples within JDK:
