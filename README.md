@@ -39,7 +39,7 @@ Proxy | Inheritance for main implementation and then composition for main implem
     * [Observer Pattern](src/main/java/com/ysingh/behavioral/observer)
     * [Strategy Pattern](src/main/java/com/ysingh/behavioral/strategy)
     * [Mediator Pattern](src/main/java/com/ysingh/behavioral/mediator)
-    * Command Pattern
+    * [Command Pattern](src/main/java/com/ysingh/behavioral/command)
     * [State Pattern](src/main/java/com/ysingh/behavioral/state)
     * [Visitor Pattern](src/main/java/com/ysingh/behavioral/visitor)
     * [Interpretor Pattern](src/main/java/com/ysingh/behavioral/interpreter)
@@ -290,7 +290,7 @@ Proxy | Inheritance for main implementation and then composition for main implem
 * javax.servlet.http.HttpSessionAttibuteListerner
 
 ## Iterator Design Pattern
-* Iterator design pattern is one of the structural design pattern.
+* Iterator design pattern is one of the behavioral design pattern.
 * Iterator pattern is used to provide a strandard way to traverse through a group of Objects. Iterator pattern is widely used in Java Collection.
 * Iterator interface provide methods of traversing through a collection.
 * This pattern provides a way to access the elements of an aggregate object without exposing its underlying representation.
@@ -303,7 +303,7 @@ Proxy | Inheritance for main implementation and then composition for main implem
 * All implementations of java.util.Enumeration
 
 ## Interpreter Design Pattern
-* Interpreter design pattern is one of the structural design pattern.
+* Interpreter design pattern is one of the behavioral design pattern.
 * It is used to defines a grammatical representation for a language and provides an interpreter to deal with this grammer.
 * The best example of interpreter design patten is java compiler that interprets the java source code into by code that is understandable by JVM.
 * Google translator is also an example of interpreter pattern where the input can be in any language and we can get the output interpreted in another language.
@@ -311,3 +311,13 @@ Proxy | Inheritance for main implementation and then composition for main implem
 * [Example](src/main/java/com/ysingh/behavioral/interpreter/TestApp.java)
 ### Examples within JDK:
 * java.util.regex.Pattern and subclasses of java.text.Format are some of the examples of interpreter pattern used in JDK.
+
+## Command Design Pattern
+* Command design pattern is a data driven design pattern and one of the behavioral design pattern.
+* A request is wrapped under an object as command and passed to invoker object. Invoker object looks for the appropriate object which can handle this command and passes the command to the corresponding object which executes the command.
+### Implementation:
+* [Example](src/main/java/com/ysingh/behavioral/command/TestApp.java)
+### Examples within JDK:
+* All the implementation of java.lang.Runnable
+* All implementations of javax.swing.Action
+
