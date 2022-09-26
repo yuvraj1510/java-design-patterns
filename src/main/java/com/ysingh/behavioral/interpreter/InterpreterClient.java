@@ -1,9 +1,9 @@
 package com.ysingh.behavioral.interpreter;
 
 import com.ysingh.behavioral.interpreter.engine.InterpreterEngine;
-import com.ysingh.behavioral.interpreter.interfaces.AdditionExpression;
 import com.ysingh.behavioral.interpreter.interfaces.Expression;
-import com.ysingh.behavioral.interpreter.interfaces.SubtractionExpression;
+import com.ysingh.behavioral.interpreter.interfaces.impl.AdditionExpression;
+import com.ysingh.behavioral.interpreter.interfaces.impl.SubtractionExpression;
 
 public class InterpreterClient {
 

@@ -21,13 +21,12 @@
     * [Facade Pattern](src/main/java/com/ysingh/structural/facade)
     * [Composite Pattern](src/main/java/com/ysingh/structural/composite)
     * [Proxy Pattern](src/main/java/com/ysingh/structural/proxy)
-    * Flyweight Pattern
 
 Name|Used Notion(Inheritance or Composition)|Example Used
 ----|---------------------------------------|------------
 Adapter | Inheritance for Adapter implementations and composition for joining those implementations | Mobile Adapter - convert 240 Volts to 3 Volts
 Bridge | Abstract class in composition with Interface and implementation of Abstract class and Interfaces | Draw Shape and Fill Color - Shape is Abstract class and Color is interface
-Decorator | Inhertance for Base implementation and then composition of enhanced implementation using Base implementation | Bike - Basic Bike, and Luxury and Sport Bike created using Decorator
+Decorator | Inheritance for Base implementation and then composition of enhanced implementation using Base implementation | Bike - Basic Bike, and Luxury and Sport Bike created using Decorator
 Facade | Composition of different interfaces and give simple facade to call the methods of composed interfaces | Report - PdfReport, HtmlReport, ExcelReport
 Composite | Uses inheritance with different implementation and then single implementation of same interface combined different implementation | Service - Employee and Admin Service based on ServiceType
 Proxy | Inheritance for main implementation and then composition for main implementation in Proxy implementation | Very expensive process implementation and Very expensive process proxy
@@ -44,7 +43,19 @@ Proxy | Inheritance for main implementation and then composition for main implem
     * [Visitor Pattern](src/main/java/com/ysingh/behavioral/visitor)
     * [Interpretor Pattern](src/main/java/com/ysingh/behavioral/interpreter)
     * [Iterator Pattern](src/main/java/com/ysingh/behavioral/iterator)
-    * Memento Pattern
+
+Name|Used Notion(Inheritance or Composition)|Example Used
+----|---------------------------------------|------------
+Template | An abstract class to represent the template and we can have default implementation of few template steps and then different implementation of the template by extending abstract class. | Pizza Template and Veg/Non-Veg Pizza
+Mediator | An interface which act as mediator for multiple interfaces and give methods to add interfaces to the mediator interface | ChatMediator and Users
+Chain of Responsibility | An interface to manage the chain the different implementation and provide a method on which chain operates | ATM Money Dispenser
+Strategy | An interface provides a method which is implemented by different implementations and User provide the options to use the defined implementation | Shopping Cart and Payment Methods
+State | An interface which act as State and provide method to perform action based on state. Multiple implementations which represent the different state. Then a Context which orchestrate the interface and different implementation to perform action based on state | AC Start and Stop Action State
+Visitor | Multiple interfaces implementations and pass reference of visitor interface to another interface implementation method to perform visit on different types of visitor | Shopping Cart (Visitor) and Items (Visit)
+Observer | Observer interface give method through which it can observe and Subject interface provides methods to add or remove observer and notify the observers by calling observers implementations on list of observers | Message Publisher and Subscribe
+Iterator | Iterator interface which gives operation to perform iterations like hasNext() and next() and an Implementation which return the reference to iterator implementation | Iterating over list of names
+Interpreter | An interpretor engine that provides different implementation of interpretation and an interface of expression and different implementation of the interface which perform interpretation based on interpretor engine reference | Add and Subtract two numbers
+Command | An interface having a command and multiple implementation execute the command | Buy and Sell Stock
 
 ## Singleton Design Pattern
 * This ensure that only one instance of the class exists in the JVM.
